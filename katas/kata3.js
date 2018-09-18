@@ -1,3 +1,8 @@
+var captilizeFirst = function(string)
+{
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 var talkingCalendar = function(date) {
   var values = date.split("/");
 
@@ -22,6 +27,7 @@ var talkingCalendar = function(date) {
   return month + " " + values[2] + abb + ", " + values[0];
 };
 
-console.log(talkingCalendar("2017/12/02"));
-console.log(talkingCalendar("2007/11/11"));
-console.log(talkingCalendar("1987/08/24"));
+//console.log(talkingCalendar("2017/12/02"));
+//console.log(talkingCalendar("2007/11/11"));
+//console.log(talkingCalendar("1987/08/24"));
+console.log(captilizeFirst("hello"));
